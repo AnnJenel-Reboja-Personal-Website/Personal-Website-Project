@@ -18,11 +18,13 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
-    padding: 25px 50px;
+    width: 100vw;
+    height: 7vh;
+    background-color: #ad8e6a;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 1px 5px 10px #5e503f91;
 }
 
 header .logo {
@@ -32,11 +34,14 @@ header .logo {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 6px 15px;
+    margin-left: 50px;
+    transition: margin-bottom 1s;
 }
 
 header .logo:hover {
-    color: #242220;
+    color: #EAE0D5;
+    margin-bottom: 5px;
+    transition: margin-bottom 1s;
 }
 
 header ul {
@@ -48,7 +53,8 @@ header ul {
 
 header ul li {
     list-style: none;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: -10px;
 }
 
 header ul li a {
@@ -65,7 +71,7 @@ header ul li a:hover {
 
 .home {
     color: #242220;
-    border: solid black;
+
     height: 500px;
     display: flex;
     padding: 0 50px;
@@ -73,13 +79,14 @@ header ul li a:hover {
 }
 
 .home-text {
-    border:solid red;
     max-width: 700px;
+    
 }
 
 .home-text h1 {
     font-size: 2.5em;
     font-weight: 800;
+    margin-bottom: -8px;
 }
 
 .home-text h3 {
@@ -88,18 +95,26 @@ header ul li a:hover {
 
 .p1 {
     font-size: 1em;
+    color: #5E503F;
 }
 
 .p2 {
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 1em;
     color: gray;
+
 }
 
-.home-picture1a {
-    margin-left: 50%;
-    padding: 50px;
-    width: 300px;
-    height: 300px;
+.img-line {
+    margin-top: -140px;
+}
+
+.image {
+    width: 40vmin;
+    height: 40vmin;
     object-fit: cover;
+    margin-left: 50px;
+    margin-right: -40px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px #24222042;
 }
