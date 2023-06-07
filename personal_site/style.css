@@ -1,0 +1,131 @@
+
+/* downloading and importing the font for the website */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap');
+
+/* format for the whole document */
+* {
+    margin: 0;
+    padding: 2px;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* format for the body bg and dimension */
+body {
+    min-height: 100px;
+    background-color: #11151C;
+}
+
+/* format for the header containing the logo and nav buttons */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    background-color: #29374d;
+    /* flex- to have the items go from left to right */
+    display: flex;
+    /* to space out the items in flex */
+    justify-content: space-between;
+    /* To center the logo to the center (on y axis) */
+    align-items: center;
+    box-shadow: 1px 5px 10px #41597c91;
+}
+
+/* format and partial animation for the logo "ANNORINO" */
+header .logo {
+    color: #8c94a1;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;
+    /* adjusting the speed of the transition */
+    transition: margin-bottom .5s;
+}
+
+/* formating of what the logo will do if a mouse hovers */
+header .logo:hover {
+    color: #f8f8f8;
+    /* logo will move up */
+    margin-bottom: 5px;
+    /* speed of the logo moving up */
+    transition: margin-bottom .2s;
+}
+
+/* To specifically format the Home, About and Portfolio */
+header ul {
+    font-size: 1em;
+    /* has these items go left to right */
+    display: flex;
+    list-style: none;
+}
+
+/* added ul li to better tweak the spacing in between each nav button */
+header ul li {
+    /* below is an example of CSS margin shorthand  */
+    margin: 0px 40px 0px -10px;
+    padding: 6px 15px;
+}
+
+/* to get rid of the underlines and change color of the nav buttons */
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* hover effects of the nav buttons */
+header ul li a:hover {
+    background-color: #11263f;
+    border-radius: 15px;
+    color:#f8f8f8;
+}
+
+/* contents for the section "home" */
+.home {
+    color: #f7f7f7;
+    height: 500px;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+}
+
+.home-text {
+    max-width: 700px;
+}
+
+.home-text h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: -8px;
+}
+
+.home-text h3 {
+    font-size: 1.3em;
+}
+
+.p1 {
+    font-size: 1em;
+    color: #b4b2b2;
+}
+
+.p2 {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #aeb0c5;
+}
+
+.img-line {
+    margin-top: -140px;
+}
+
+/* adjusting the size and margins of each img */
+.image {
+    width: 40vmin;
+    height: 40vmin;
+    /* adjusting how the img is scaled */
+    object-fit: cover;
+    margin: 10px -40px 0px 50px;
+    box-shadow: 10px 10px 10px #24398048;
+}
