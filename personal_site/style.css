@@ -11,7 +11,7 @@
 /*  */
 body {
     min-height: 100px;
-    background-color: #f5efe8;
+    background-color: #11151C;
 }
 
 header {
@@ -20,28 +20,28 @@ header {
     left: 0;
     width: 100vw;
     height: 7vh;
-    background-color: #ad8e6a;
+    background-color: #29374d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 1px 5px 10px #5e503f91;
+    box-shadow: 1px 5px 10px #41597c91;
 }
 
 header .logo {
-    color: #312b24;
+    color: #8c94a1;
     text-align: center;
     font-size: 2em;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 50px;
-    transition: margin-bottom 1s;
+    transition: margin-bottom .5s;
 }
 
 header .logo:hover {
-    color: #EAE0D5;
+    color: #f8f8f8;
     margin-bottom: 5px;
-    transition: margin-bottom 1s;
+    transition: margin-bottom .2s;
 }
 
 header ul {
@@ -60,18 +60,17 @@ header ul li {
 header ul li a {
     padding: 6px 15px;
     text-decoration: none;
-    color:black
+    color: #fff;
 }
 
 header ul li a:hover {
-    background-color: #5E503F;
+    background-color: #11263f;
     border-radius: 15px;
-    color:#fff;
+    color:#f8f8f8;
 }
 
 .home {
-    color: #242220;
-
+    color: #f7f7f7;
     height: 500px;
     display: flex;
     padding: 0 50px;
@@ -95,14 +94,13 @@ header ul li a:hover {
 
 .p1 {
     font-size: 1em;
-    color: #5E503F;
+    color: #b4b2b2;
 }
 
 .p2 {
     margin-top: 8px;
     font-size: 1em;
-    color: gray;
-
+    color: #aeb0c5;
 }
 
 .img-line {
