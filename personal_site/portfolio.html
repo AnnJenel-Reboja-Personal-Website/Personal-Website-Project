@@ -2,36 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- Linking the CSS style sheet -->
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Using Semantic HTML to differentiate this section from the rest of the website-->
-        <header>
-            <a href="index.html" class="logo">Annorino</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </header>
-        <!-- Content that holds the portfolio description -->
-        <section class="home">
-            <div class="home-text">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src ="./Resources/logo.svg" alt ="logo svg"/>
+                </a>
+            </li>   
+
+            <li class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src ="./Resources/home.svg" alt ="home svg" class="home"/>
+                </a>
+            </li>
+
+            <li class="nav-items">
+                <a href="about.html" class="nav-item">
+                    <img src ="./Resources/about-me.svg" alt ="about me svg" class="about"/>
+                </a>
+            </li>
+
+            <li class="nav-items">
+                <a href="portfolio.html" class="nav-item">
+                    <img src ="./Resources/portfolio.svg" alt ="portfolio svg"/>
+                </a>
+            </li>  
+
+            <li class="nav-items">
+                <a href="contact.html" class="nav-item">
+                    <img src ="./Resources/contact-me.svg" alt ="contact svg"/>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Content that holds the portfolio description and header -->
+        <section class="header">
             <h1>Past Projects</h1>
             <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut diam vulputate enim sodales elementum et vitae diam. Integer tristique tempor massa, in volutpat purus semper vel. Nam aliquam vehicula velit et ultricies. Fusce id condimentum leo, ac ornare neque. Praesent a dapibus nulla. Proin pulvinar faucibus viverra. In pharetra lacus nec efficitur varius.</p>
             </div>
         </section>
         <!-- Img uploaded to the site -->
         <div class="img-line">
-            <img class="image" src="https://images.unsplash.com/photo-1685123466319-d7d8bae569d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80">
-            <img class="image" src="https://images.unsplash.com/photo-1682687221323-6ce2dbc803ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
-            <img class="image" src="https://images.unsplash.com/photo-1682686579976-879b74d6d7ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80">
-            <img class="image" src="https://images.unsplash.com/photo-1685566177611-a607e0b46d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
-            <img class="image" src="https://images.unsplash.com/photo-1685556636541-b141d0a09746?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1602136773736-34d445b989cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1573455494057-12684d151bf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=724&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1606595058893-a4425488cab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=836&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1508179786413-c5813f2ee868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1556017653-74c5661ddff4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1687186735445-df877226fae9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1606542758304-820b04394ac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1561411996-3794338f63cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1586461715699-1e192dcd04c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=838&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1655777124904-0b1ac542841b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1642019341061-f81d61659c62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1660665478012-4a6a79b676a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1582473073708-778be9322bcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1574812087215-14189491f2c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1532275184950-4401e12adcaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1040&q=80">
+            <img class="image" src="https://images.unsplash.com/photo-1571182160015-2169f6e1aa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=886&q=80">
         </div>
+    </main>
 </body>
 </html>

@@ -1,131 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* downloading and importing the font for the website */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap');
-
-/* format for the whole document */
-* {
-    margin: 0;
-    padding: 2px;
-    font-family: 'Lexend', sans-serif;
+:root {
+    font-size: 17px;
+    font-family: 'Noto Sans JP', sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #1e2124;
+    --bg-secondary: #424549;
 }
 
-/* format for the body bg and dimension */
 body {
-    min-height: 100px;
-    background-color: #11151C;
+    color: rgb(255, 255, 255);
+    background-color: #282b30;
+    margin: 0;
+    padding: 0;
 }
 
-/* format for the header containing the logo and nav buttons */
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 7vh;
-    background-color: #29374d;
-    /* flex- to have the items go from left to right */
-    display: flex;
-    /* to space out the items in flex */
-    justify-content: space-between;
-    /* To center the logo to the center (on y axis) */
-    align-items: center;
-    box-shadow: 1px 5px 10px #41597c91;
+html::-webkit-scrollbar {
+    width:.3rem;
 }
 
-/* format and partial animation for the logo "ANNORINO" */
-header .logo {
-    color: #8c94a1;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-left: 50px;
-    /* adjusting the speed of the transition */
-    transition: margin-bottom .5s;
+html::-webkit-scrollbar-track {
+    background-color: #282b30;
 }
 
-/* formating of what the logo will do if a mouse hovers */
-header .logo:hover {
-    color: #f8f8f8;
-    /* logo will move up */
-    margin-bottom: 5px;
-    /* speed of the logo moving up */
-    transition: margin-bottom .2s;
+html::-webkit-scrollbar-thumb {
+    background-color: #7289da;
+    border-radius: 10px;
 }
 
-/* To specifically format the Home, About and Portfolio */
-header ul {
-    font-size: 1em;
-    /* has these items go left to right */
-    display: flex;
+main {
+    margin-left: 6.2rem; /* margin to fit the navbar to the left */
+    padding: 1rem;
+}
+
+.navbar {
+    width: 5rem; /* left sided navbar to occupy the margin-left space from main */
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);  /* to make the code cleaner, set bg colors were made for consistency, refer to :root */
+}
+
+.navbar-nav {
     list-style: none;
-}
-
-/* added ul li to better tweak the spacing in between each nav button */
-header ul li {
-    /* below is an example of CSS margin shorthand  */
-    margin: 0px 40px 0px -10px;
-    padding: 6px 15px;
-}
-
-/* to get rid of the underlines and change color of the nav buttons */
-header ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* hover effects of the nav buttons */
-header ul li a:hover {
-    background-color: #11263f;
-    border-radius: 15px;
-    color:#f8f8f8;
-}
-
-/* contents for the section "home" */
-.home {
-    color: #f7f7f7;
-    height: 500px;
+    padding: 0;
+    margin: 0;
     display: flex;
-    padding: 0 50px;
     align-items: center;
+    flex-direction: column;
 }
 
-.home-text {
-    max-width: 700px;
+.nav-items {
+    width: 45%;
+    margin-bottom: 2.5rem;
 }
 
-.home-text h1 {
-    font-size: 2.5em;
-    font-weight: 800;
-    margin-bottom: -8px;
+.nav-items:first-child {
+    width: 75%;
+    margin-bottom: 13rem;
+    margin-top: 2rem
 }
 
-.home-text h3 {
-    font-size: 1.3em;
+.nav-item:hover {
+    filter: invert(0.7) sepia(1) saturate(14.6) hue-rotate(194.4deg) brightness(0.9);
+    transition-duration: .7s;
 }
 
-.p1 {
-    font-size: 1em;
-    color: #b4b2b2;
-}
-
-.p2 {
-    margin-top: 8px;
-    font-size: 1em;
-    color: #aeb0c5;
-}
-
-.img-line {
-    margin-top: -140px;
-}
-
-/* adjusting the size and margins of each img */
 .image {
-    width: 40vmin;
-    height: 40vmin;
+    width: 25vmin;
+    height: 25vmin;
     /* adjusting how the img is scaled */
     object-fit: cover;
-    margin: 10px -40px 0px 50px;
-    box-shadow: 10px 10px 10px #24398048;
+    margin: .5rem .5rem .5rem 0rem;
+}
+
+.about img {
+    height: auto;
+    width: 450px;
+    padding: 1rem;
+    margin-top: 10rem;
+}
+
+.about {
+    width: 1000px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: 	#7289da;
+}
+
+.header h2 {
+    margin-top: -6rem;
+    text-align: center;
+    font-size: 5rem;
+    color: 	#7289da;
+}
+
+.header h3 {
+    text-align: center;
+    margin-top: -3rem;
+}
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    background-color: #424549;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    align-items: center;
+  }
+
+  input[type="text"]:focus {
+    background: #eaecf1;
+  }
+
+  input[type="email"]:focus {
+    background: #eaecf1;
+  }
+  
+  input[type="submit"] {
+    background-color: #7289da;
+    color: #eef1f5;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+@media (max-width:600px) {
+    main {
+        margin-left: 1rem;
+    }
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-items:first-child {
+        display: none;
+    }
+
+    .nav-items {
+        margin: 3% 7% 3% 7%;
+        width: 8.5%;
+    }
 }

@@ -2,31 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-        <!-- Linking the CSS style sheet -->
+    <title>About Me</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Using Semantic HTML to differentiate this section from the rest of the website-->
-        <header>
-            <!-- Logo was included that will redirect to the home page if clicked -->
-            <a href="index.html" class="logo">Annorino</a>
-            <ul>
-                <!-- These are the navigation buttons -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </header>
-        <!-- Content that holds the about me -->
-        <section class="home">
-            <div class="home-text">
-            <h1>About Myself</h1>
-            <h3>Alias "Annorino"</h3>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src ="./Resources/logo.svg" alt ="logo svg"/>
+                </a>
+            </li>   
+
+            <li class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src ="./Resources/home.svg" alt ="home svg" class="home"/>
+                </a>
+            </li>
+
+            <li class="nav-items">
+                <a href="about.html" class="nav-item">
+                    <img src ="./Resources/about-me.svg" alt ="about me svg" class="about"/>
+                </a>
+            </li>
+
+            <li class="nav-items">
+                <a href="portfolio.html" class="nav-item">
+                    <img src ="./Resources/portfolio.svg" alt ="portfolio svg"/>
+                </a>
+            </li>  
+
+            <li class="nav-items">
+                <a href="contact.html" class="nav-item">
+                    <img src ="./Resources/contact-me.svg" alt ="contact svg"/>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Content that holds the portfolio description and header -->
+        <section class="header">
+            <div class="about">
+                <img src="./Resources/anime-girl.jpg">
+                <div class="about-text">
+            <h1>About Me</h1>
+            <h3>Alias [Annorino]</h3>
             <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut diam vulputate enim sodales elementum et vitae diam. Integer tristique tempor massa, in volutpat purus semper vel. Nam aliquam vehicula velit et ultricies. Fusce id condimentum leo, ac ornare neque. Praesent a dapibus nulla. Proin pulvinar faucibus viverra. In pharetra lacus nec efficitur varius.</p>
-            </div>
+                </div>
+             </div>
         </section>
-</body>
+    </main>
 </html>
