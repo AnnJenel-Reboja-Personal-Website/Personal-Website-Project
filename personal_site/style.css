@@ -1,14 +1,16 @@
+/* importing a font from google "Noto Sans JP" */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* formatting for the whole document */
 :root {
+    /* font size made to correlate with rem units throughout the CSS */
     font-size: 17px;
     font-family: 'Noto Sans JP', sans-serif;
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
+    /* bg primary to go back to and to use in code */
     --bg-primary: #1e2124;
-    --bg-secondary: #424549;
 }
 
+/* formatting for body tag */
 body {
     color: rgb(255, 255, 255);
     background-color: #282b30;
@@ -16,13 +18,16 @@ body {
     padding: 0;
 }
 
+/* formatting for the scrollbar */
 html::-webkit-scrollbar {
     width:.3rem;
 }
 
+/* the track of scrollbar is the same as bg so it's hidden */
 html::-webkit-scrollbar-track {
     background-color: #282b30;
 }
+
 
 html::-webkit-scrollbar-thumb {
     background-color: #7289da;
@@ -42,30 +47,37 @@ main {
 }
 
 .navbar-nav {
+    /* to get rid of the styles */
     list-style: none;
     padding: 0;
     margin: 0;
+    /* to have it display left to right */
     display: flex;
     align-items: center;
+    /* to have the flex be columnar (up to down) */
     flex-direction: column;
 }
 
+/* icons for navbar */
 .nav-items {
     width: 45%;
     margin-bottom: 2.5rem;
 }
 
+/* editing the first icon (logo) so it's spaced out from the other nav items */
 .nav-items:first-child {
     width: 75%;
     margin-bottom: 13rem;
     margin-top: 2rem
 }
 
+/* formatting when mouse hovers over nav icons */
 .nav-item:hover {
     filter: invert(0.7) sepia(1) saturate(14.6) hue-rotate(194.4deg) brightness(0.9);
     transition-duration: .7s;
 }
 
+/* img size and style in the portfolio page */
 .image {
     width: 25vmin;
     height: 25vmin;
@@ -74,6 +86,7 @@ main {
     margin: .5rem .5rem .5rem 0rem;
 }
 
+/* img formatting in the about me page */
 .about img {
     height: auto;
     width: 450px;
@@ -106,30 +119,36 @@ main {
     text-align: center;
     margin-top: -3rem;
 }
-  
-  label {
+
+/* below is the CSS formatting for the forms page in the contact.html */
+
+label {
+    /* block to occupy the full width */
     display: block;
     margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
+}
+
+/* added two inputs: text and email */
+input[type="text"],
+input[type="email"] {
     background-color: #424549;
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
     width: 50%;
     align-items: center;
-  }
+}
 
-  input[type="text"]:focus {
+/* focus: change in formatting when input field is active */
+input[type="text"]:focus {
     background: #eaecf1;
-  }
+}
 
-  input[type="email"]:focus {
+input[type="email"]:focus {
     background: #eaecf1;
-  }
-  
+}
+
+/* submit button and formatting */
   input[type="submit"] {
     background-color: #7289da;
     color: #eef1f5;
@@ -137,12 +156,15 @@ main {
     border: none;
     cursor: pointer;
     align-items: center;
-  }
+}
   
+/* fixing the width of fields to function on mobile */
 @media (max-width:600px) {
     main {
         margin-left: 1rem;
     }
+
+    /* nav bar is moved to the bottom */
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -153,7 +175,7 @@ main {
         justify-content: center;
         align-items: center;
     }
-
+    /* logo is removed to have more space */
     .nav-items:first-child {
         display: none;
     }

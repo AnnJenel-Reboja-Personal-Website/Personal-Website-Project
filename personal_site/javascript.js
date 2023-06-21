@@ -1,3 +1,4 @@
+/*  */
 document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
   
@@ -5,14 +6,13 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     var nameInput = document.getElementById("name");
     var emailInput = document.getElementById("email");
   
+    /* if no valid data is entered, display "please fill in all required fields" for both name and email */
     if (nameInput.value.trim() === "" || emailInput.value.trim() === "") {
       alert("Please fill in all required fields.");
       return;
     }
   
-    // Form submitted successfully
+    // alert dialogue box that form is submitted successfully
     alert("Form submitted!");
-  
-    // Perform further processing or submit the form to a server
   });
   
